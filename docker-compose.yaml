@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  mysql:
+    container_name: db_minsait
+    image: mysql:8.1
+    restart: always
+    environment:
+      MYSQL_DATABASE: db_treinamento
+      MYSQL_USERNAME: root
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./data:/data/mysql
