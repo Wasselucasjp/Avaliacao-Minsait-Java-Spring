@@ -65,7 +65,5 @@ http://localhost:8080/swagger-ui/index.html
 
 Agradecimento ao Professor Eduardo Henrique Marques Ferreira (https://github.com/eduardohen1) por ter ministrado a aula de Spring Boot!
 
-## Apêndice
 
-Coloque qualquer informação adicional aqui
 
