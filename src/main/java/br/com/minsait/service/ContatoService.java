@@ -40,12 +40,7 @@ public class ContatoService implements ContatoServiceInterface {
     @Override
     public Optional<Contato> buscarContatoPorID(Long id) {
         Optional<Contato> contato = contatoRepository.findById(id);
-
        return Optional.ofNullable(contato.orElseThrow(() -> new ResourceNotFoundException("Não foi possível encontrar um contato com o ID " + id + " no banco de dados. Por favor, verifique o ID e tente novamente.")));
-//        if (!contato.isPresent()) {
-//            throw new ResourceNotFoundException("Não foi possível encontrar um contato com o ID " + id + " no banco de dados. Por favor, verifique o ID e tente novamente.");
-//        }
-//        throw new ResourceNotFoundException("Contato localizado com sucesso");
     }
 
     @Override
